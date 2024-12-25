@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sap__itens_venda
+    description: Tabela de preparação dos dados brutos dos itens referentes aos pedidos de venda.
+    columns:
+      - name: pk_item_venda
+        description: Identificador de cada item vendido.
+        data_tests:
+          - unique
+          - not_null  

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sap__pedidos_venda
+    description: Tabela de preparação dos dados brutos dos pedidos de venda.
+    columns:
+      - name: pk_pedido_venda
+        description: Identificador dos pedidos de venda.
+        data_tests:
+          - unique
+          - not_null  
