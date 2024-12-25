@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sap__motivos_venda
+    description: Tabela de preparação dos dados brutos dos motivos de venda.
+    columns:
+      - name: pk_motivo_venda
+        description: Identificador de cada motivo de venda
+        data_tests:
+          - unique
+          - not_null  

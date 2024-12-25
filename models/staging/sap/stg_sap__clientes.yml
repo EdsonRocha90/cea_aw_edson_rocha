@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sap__clientes
+    description: Tabela de preparação dos dados brutos dos clientes.
+    columns:
+      - name: pk_cliente
+        description: Identificador de cada cliente.
+        data_tests:
+          - unique
+          - not_null  
