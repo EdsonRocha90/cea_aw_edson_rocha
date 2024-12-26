@@ -4,7 +4,7 @@ models:
   - name: stg_sap__paises
     description: Tabela de preparação dos dados brutos da tabela referente aos países.
     columns:
-      - name: pk_estados
+      - name: pk_pais
         description: Identificador do país.
         data_tests:
           - unique
