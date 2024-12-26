@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sap__territorio_vendas
+    description: Tabela de preparação dos dados brutos dos territorios de vendas.
+    columns:
+      - name: pk_territorio
+        description: Identificador de cada territorio.
+        data_tests:
+          - unique
+          - not_null  
