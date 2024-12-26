@@ -1,10 +1,10 @@
 with
     territorio_vendas as (
         select 
-            cast(TERRITORYID as int) as pk_territorio
-            ,COUNTRYREGIONCODE as fk_pais
-            ,NAME as territorio
-            ,"group" as GRUPO
+            cast(territoryid as int) as pk_territorio
+            ,countryregioncode as fk_pais
+            ,name as territorio
+            ,"group" as grupo_territorio
             ,cast(salesytd as numeric(38,2)) as vendas_acumuladas
             ,cast(saleslastyear as numeric(38,2)) as vendas_ultimo_ano
             ,cast(costytd as numeric(38,2)) as custo_acumulado
