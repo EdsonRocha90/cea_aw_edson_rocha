@@ -7,7 +7,7 @@ with
             ,cast(territoryid as int) as fk_territorio
             ,cast(billtoaddressid as int) as fk_endereco_fatura
             ,cast(shiptoaddressid as int) as fk_endereco_entrega
-            ,cast(shipmethodid as int) as fk_metodo_entrega
+            ,cast(creditcardid as int) as fk_cartao_credito
             ,cast(orderdate as date) as data_pedido
             ,cast(duedate as date) as data_validade_pedido
             ,cast(shipdate as date) as data_envio
