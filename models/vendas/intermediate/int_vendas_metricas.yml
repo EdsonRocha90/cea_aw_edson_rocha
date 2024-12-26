@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_vendas_metricas
+    description: Tabela intermediária para enriquecer os dados da tabela itens_pedido e acrescentar métricas importantes para o negócio, gerando os dados necessários para a fato vendas.
+    columns:
+      - name: pk_item_pedido
+        description: Identificador de cada item vendido.
+        data_tests:
+          - unique
+          - not_null  
