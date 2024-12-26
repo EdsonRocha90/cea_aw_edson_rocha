@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sap__funcionarios
+    description: Tabela de preparação dos dados brutos dos funcionários da empresa.
+    columns:
+      - name: pk_funcionario
+        description: Identificador do funcionário.
+        data_tests:
+          - unique
+          - not_null  

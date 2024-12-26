@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sap__produtos
+    description: Tabela de preparação dos dados brutos dos produtos da empresa.
+    columns:
+      - name: pk_produto
+        description: Identificador do produto.
+        data_tests:
+          - unique
+          - not_null  

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sap__motivo_venda_pedidos
+    description: Tabela de preparação dos dados brutos do motivo de venda dos pedidos.
+    columns:
+      - name: pk_motivo_venda_pedido
+        description: Identificador do motivo da venda referente a cada pedido.
+        data_tests:
+          - unique
+          - not_null  

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sap__pessoas
+    description: Tabela de preparação dos dados brutos das pessoas cadastradas no sistema.
+    columns:
+      - name: pk_pessoa
+        description: Identificador da pessoa.
+        data_tests:
+          - unique
+          - not_null  
