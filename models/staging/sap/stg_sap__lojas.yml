@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sap__lojas
+    description: Tabela de preparação dos dados brutos das lojas.
+    columns:
+      - name: pk_loja
+        description: Identificador da loja.
+        data_tests:
+          - unique
+          - not_null  
