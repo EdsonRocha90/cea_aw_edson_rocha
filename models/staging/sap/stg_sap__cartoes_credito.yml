@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sap__cartoes_credito
+    description: Tabela de preparação dos dados brutos dos motivos de venda.
+    columns:
+      - name: pk_cartao_credito
+        description: Identificador de cada motivo de venda
+        data_tests:
+          - unique
+          - not_null  
