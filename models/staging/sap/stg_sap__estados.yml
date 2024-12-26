@@ -4,7 +4,7 @@ models:
   - name: stg_sap__estados
     description: Tabela de preparação dos dados brutos da tabela referente aos Estados.
     columns:
-      - name: pk_estados
+      - name: pk_estado
         description: Identificador do Estado.
         data_tests:
           - unique

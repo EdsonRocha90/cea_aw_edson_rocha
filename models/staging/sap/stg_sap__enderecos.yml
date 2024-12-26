@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sap__enderecos
+    description: Tabela de preparação dos dados brutos da tabela de endereços.
+    columns:
+      - name: pk_endereco
+        description: Identificador do endereço.
+        data_tests:
+          - unique
+          - not_null  
