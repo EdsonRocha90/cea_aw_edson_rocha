@@ -14,9 +14,10 @@ sources:
       - name: stateprovince
       - name: address
       - name: countryregion
-      - name: salesorderheader    
+      - name: salesorderheader 
       - name: salesorderdetail
       - name: product
       - name: salesorderheadersalesreason
       - name: salesterritory
       - name: store
+      - name: creditcard
