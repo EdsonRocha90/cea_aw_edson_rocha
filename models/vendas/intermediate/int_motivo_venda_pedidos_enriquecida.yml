@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_motivo_venda_pedidos_enriquecida
+    description: Tabela intermediária para enriquecer os dados da tabela fato de motivos de venda pedidos.
+    columns:
+      - name: pk_motivo_venda_pedido
+        description: Identificador de cada pedido e seu motivo de venda.
+        data_tests:
+          - unique
+          - not_null  
