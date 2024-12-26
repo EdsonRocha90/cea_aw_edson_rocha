@@ -18,3 +18,4 @@ sources:
       - name: salesorderdetail
       - name: product
       - name: salesorderheadersalesreason
+      - name: salesterritory
