@@ -66,6 +66,12 @@ sources:
               data_tests:
                 - unique
                 - not_null
+            - name: salesorderid
+              data_tests:
+                - not_null
+            - name: productid
+              data_tests:
+                - not_null
       - name: product
         columns:
             - name: productid
