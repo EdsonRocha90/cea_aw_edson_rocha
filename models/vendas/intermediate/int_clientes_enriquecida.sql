@@ -28,11 +28,11 @@ with
             ,pes.primeiro_nome
             ,pes.ultimo_sobrenome
             ,pes.nome_completo
-            ,pes.flag_email_promocao
-            ,pes.flag_nome_estilizado
+            ,loj.nome_loja
             ,ter.territorio
             ,ter.grupo_territorio
-            ,loj.nome_loja
+            ,pes.flag_email_promocao
+            ,pes.flag_nome_estilizado
         from clientes cli
         left join pessoas pes on cli.pk_cliente = pes.pk_pessoa
         left join territorio_vendas ter on cli.fk_territorio = ter.pk_territorio 
