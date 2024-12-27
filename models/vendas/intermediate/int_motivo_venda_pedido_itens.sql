@@ -11,7 +11,7 @@ with
 
     int_motivo_venda_pedido_itens as (
         select 
-            vmt.pk_item_pedido || '-' || mvp.fk_motivo_venda as pk_motivo_venda_item_pedido
+            vmt.pk_item_pedido || '-' || ifnull(mvp.fk_motivo_venda, '0') as pk_motivo_venda_item_pedido
             ,vmt.fk_cliente
             ,vmt.fk_produto
             ,vmt.fk_vendedor

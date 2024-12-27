@@ -5,10 +5,12 @@ with
     ),
 
     int_territorio_vendas as (
-        pk_territorio
-        ,fk_pais
-        ,territorio
-        ,grupo_territorio
+        select 
+            pk_territorio
+            ,fk_pais
+            ,territorio
+            ,grupo_territorio
+        from territorio_vendas
     )
 
 select * 
