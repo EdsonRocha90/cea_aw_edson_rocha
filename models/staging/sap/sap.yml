@@ -7,17 +7,94 @@ sources:
     schema: raw_adventure_works 
     tables:
       - name: customer
+        columns:
+            - name: customerid
+              data_tests:
+                - unique
+                - not_null
       - name: person
-      - name: salesreason      
+        columns:
+            - name: businessentityid
+              data_tests:
+                - unique
+                - not_null
+      - name: salesreason 
+        columns:
+            - name: salesreasonid
+              data_tests:
+                - unique
+                - not_null     
       - name: salesperson
+        columns:
+            - name: businessentityid
+              data_tests:
+                - unique
+                - not_null
       - name: employee
+        columns:
+            - name: businessentityid
+              data_tests:
+                - unique
+                - not_null
       - name: stateprovince
+        columns:
+            - name: stateprovinceid
+              data_tests:
+                - unique
+                - not_null
       - name: address
+        columns:
+            - name: addressid
+              data_tests:
+                - unique
+                - not_null
       - name: countryregion
+        columns:
+            - name: countryregioncode
+              data_tests:
+                - unique
+                - not_null
       - name: salesorderheader 
+        columns:
+            - name: salesorderid
+              data_tests:
+                - unique
+                - not_null
       - name: salesorderdetail
+        columns:
+            - name: salesorderdetailid
+              data_tests:
+                - unique
+                - not_null
       - name: product
+        columns:
+            - name: productid
+              data_tests:
+                - unique
+                - not_null
       - name: salesorderheadersalesreason
+        columns:
+            - name: salesorderid
+              data_tests:
+                - not_null
+            - name: salesreasonid
+              data_tests:
+                - not_null
       - name: salesterritory
+        columns:
+            - name: territoryid
+              data_tests:
+                - unique
+                - not_null
       - name: store
+        columns:
+            - name: businessentityid
+              data_tests:
+                - unique
+                - not_null
       - name: creditcard
+        columns:
+            - name: creditcardid
+              data_tests:
+                - unique
+                - not_null
