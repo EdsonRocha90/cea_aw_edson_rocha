@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_produtos
+    description: Tabela final referente à dimensão produtos.
+    columns:
+      - name: pk_produto
+        description: Identificador do motivo.
+        data_tests:
+          - unique
+          - not_null  

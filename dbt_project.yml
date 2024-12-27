@@ -49,4 +49,4 @@ models:
         +schema: intermediate
       marts:
         +materialized: table
-        +schema: vendas
+        +schema: marts

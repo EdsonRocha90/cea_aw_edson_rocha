@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_motivos_venda
+    description: Tabela final referente à dimensão motivos de venda.
+    columns:
+      - name: pk_motivo_venda
+        description: Identificador do motivo.
+        data_tests:
+          - unique
+          - not_null  

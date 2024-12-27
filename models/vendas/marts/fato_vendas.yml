@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: fato_vendas
+    description: Tabela final referentes às vendas realizadas pela empresa a nível item de cada pedido.
+    columns:
+      - name: pk_item_pedido
+        description: Identificador de cada item vendido.
+        data_tests:
+          - unique
+          - not_null  
