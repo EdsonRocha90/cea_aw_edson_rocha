@@ -39,14 +39,14 @@ models:
   dbt_adventure_works:
     staging:
       +materialized: table
-      +schema: staging
+      +schema: prd_staging
       sap:
         +materialized: table
 
     vendas:
       intermediate:
         +materialized: table
-        +schema: intermediate
+        +schema: prd_intermediate
       marts:
         +materialized: table
-        +schema: marts
+        +schema: prd_marts
