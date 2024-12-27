@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_clientes
+    description: Tabela final referente à dimensão clientes.
+    columns:
+      - name: pk_cliente
+        description: Identificador do cliente.
+        data_tests:
+          - unique
+          - not_null  

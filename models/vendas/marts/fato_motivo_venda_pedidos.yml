@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: fato_motivo_venda_pedidos
+    description: Tabela final referentes ao motivos de venda de cada pedido a nível item.
+    columns:
+      - name: pk_motivo_venda_item_pedido
+        description: Identificador do motivo da venda de cada pedido.
+        data_tests:
+          - unique
+          - not_null  

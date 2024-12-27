@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_cartoes_credito
+    description: Tabela final referente à dimensão cartões de crédito.
+    columns:
+      - name: pk_cartao_credito
+        description: Identificador de cada cartão de crédito.
+        data_tests:
+          - unique
+          - not_null  
