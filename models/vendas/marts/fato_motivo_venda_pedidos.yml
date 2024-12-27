@@ -5,7 +5,7 @@ models:
     description: Tabela final referentes ao motivos de venda de cada pedido a nível item.
     columns:
       - name: pk_motivo_venda_item_pedido
-        description: Identificador do motivo da venda de cada pedido.
+        description: Identificador do motivo da venda de cada pedido. As vendas que não foram registradas o motivo, o valor do campo foi preenchido com '0' (zero) no final para evitar valor nulo.
         data_tests:
           - unique
           - not_null  

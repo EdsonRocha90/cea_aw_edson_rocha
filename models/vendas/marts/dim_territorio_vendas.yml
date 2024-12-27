@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_territorio_vendas
+    description: Tabela final referente à dimensão território de vendas.
+    columns:
+      - name: pk_territorio
+        description: Identificador do território.
+        data_tests:
+          - unique
+          - not_null  

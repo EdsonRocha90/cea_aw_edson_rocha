@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_enderecos
+    description: Tabela final referente à dimensão endereços.
+    columns:
+      - name: pk_endereco
+        description: Identificador do cliente.
+        data_tests:
+          - unique
+          - not_null  
