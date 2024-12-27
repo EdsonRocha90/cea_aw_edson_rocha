@@ -19,7 +19,6 @@ with
             ,vend.fk_endereco_fatura
             ,vend.fk_endereco_entrega
             ,vend.fk_cartao_credito
-            ,item.fk_oferta_especial
             ,vend.pk_pedido_venda as pedido_venda
             ,vend.data_pedido
             ,vend.data_validade_pedido
