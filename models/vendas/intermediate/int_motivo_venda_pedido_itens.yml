@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_motivo_venda_pedido_itens
+    description: Tabela intermediária para enriquecer os dados da tabela motivo_venda_pedidos com os itens vendidos de cada pedido, gerando os dados necessários para a fato motivo_vendas.
+    columns:
+      - name: pk_motivo_venda_item_pedido
+        description: Identificador de cada motivo pelo qual ocorreu a venda.
+        data_tests:
+          - unique
+          - not_null  

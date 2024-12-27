@@ -42,3 +42,11 @@ models:
       +schema: staging
       sap:
         +materialized: table
+
+    vendas:
+      intermediate:
+        +materialized: table
+        +schema: intermediate
+      marts:
+        +materialized: table
+        +schema: vendas
