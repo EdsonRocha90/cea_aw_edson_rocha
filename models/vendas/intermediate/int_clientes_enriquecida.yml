@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_clientes_enriquecida
+    description: Tabela intermediária para enriquecer os dados da dimensão clientes.
+    columns:
+      - name: pk_cliente
+        description: Identificador de cada cliente.
+        data_tests:
+          - unique
+          - not_null  

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_enderecos_enriquecida
+    description: Tabela intermediária para enriquecer os dados da dimensão enderecos.
+    columns:
+      - name: pk_endereco
+        description: Identificador de cada endereco.
+        data_tests:
+          - unique
+          - not_null  

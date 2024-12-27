@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_vendedores_enriquecida
+    description: Tabela intermediária para enriquecer os dados da dimensão vendedores.
+    columns:
+      - name: pk_vendedor
+        description: Identificador de cada vendedor.
+        data_tests:
+          - unique
+          - not_null  
