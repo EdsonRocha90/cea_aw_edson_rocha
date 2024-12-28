@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_seed__de_para_datas
+    description: Tabela de preparação dos dados brutos das datas.
+    columns:
+      - name: ano_mes_dia
+        description: Coluna referente a cada data disponível na tabela.
+        data_tests:
+          - unique
+          - not_null  

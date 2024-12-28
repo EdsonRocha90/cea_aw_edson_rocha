@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_de_para_datas
+    description: Tabela intermediária referente à dimensão datas.
+    columns:
+      - name: ano_mes_dia
+        description: Coluna referente a cada data disponível na tabela.
+        data_tests:
+          - unique
+          - not_null  
