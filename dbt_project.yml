@@ -50,3 +50,7 @@ models:
       marts:
         +materialized: table
         +schema: prd_marts
+
+seeds:
+  dbt_adventure_works:
+    +schema: prd_intermediate
