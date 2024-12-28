@@ -4,7 +4,7 @@ with
         from {{ ref('stg_sap__motivo_venda_pedidos') }}
     ),
 
-    vendas_metricas as (
+    int_vendas_metricas as (
         select * 
         from {{ ref('int_vendas_metricas') }}
     ),
@@ -32,8 +32,8 @@ with
             ,vmt.status
             ,vmt.numero_revisao
             ,vmt.flag_pedido_online
-        from dbt_esrocha_intermediate.int_vendas_metricas vmt
-        left join dbt_esrocha_staging.stg_sap__motivo_venda_pedidos mvp on vmt.pedido_venda = mvp.fk_pedido_venda
+        from int_vendas_metricas vmt
+        left join motivo_venda_pedidos mvp on vmt.pedido_venda = mvp.fk_pedido_venda
     )
 
 select * 
