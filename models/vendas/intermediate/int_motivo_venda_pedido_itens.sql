@@ -33,7 +33,7 @@ with
             ,vmt.numero_revisao
             ,vmt.flag_pedido_online
         from int_vendas_metricas vmt
-        left join stg_sap__motivo_venda_pedidos mvp on vmt.pedido_venda = mvp.fk_pedido_venda
+        left join motivo_venda_pedidos mvp on vmt.pedido_venda = mvp.fk_pedido_venda
     )
 
 select * 
