@@ -10,7 +10,7 @@ with
             ,cast(semestre as int) as semestre
             ,cast(dia_mes_ano as string) as dia_mes_ano
             ,cast(chave_data as string) as chave_data
-        from seed_de_para_datas
+        from prd_seeds.seed_de_para_datas
     )
 
 select * 

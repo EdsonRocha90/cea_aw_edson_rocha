@@ -53,4 +53,4 @@ models:
 
 seeds:
   dbt_adventure_works:
-    +schema: prd_seed
+    +schema: prd_seeds
