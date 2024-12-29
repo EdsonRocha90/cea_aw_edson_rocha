@@ -1,0 +1,16 @@
+version: 2
+
+seeds:
+  - name: seed_de_para_datas
+    description: Tabela referente às informações das datas disponíveis na planilha "seed_de_para_datas.csv".
+    config:
+        column_types:
+          ano_mes_dia: date
+          ano_mes: varchar
+          mes: number
+          ano: number
+          semana: number
+          trimestre: number
+          semestre: number
+          dia_mes_ano: varchar
+          chave_data: number
