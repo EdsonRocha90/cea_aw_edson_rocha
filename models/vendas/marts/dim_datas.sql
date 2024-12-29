@@ -7,7 +7,7 @@ with
     dim_datas as (
         select 
             ano_mes_dia
-            ,mes_ano
+            ,ano_mes
             ,mes
             ,ano
             ,trimestre
