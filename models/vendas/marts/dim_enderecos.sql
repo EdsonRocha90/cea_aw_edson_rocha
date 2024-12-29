@@ -7,7 +7,6 @@ with
     dim_enderecos as (
         select 
             pk_endereco
-            ,fk_estado
             ,endereco
             ,complemento
             ,cidade

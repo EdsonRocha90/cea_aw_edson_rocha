@@ -7,17 +7,15 @@ with
     dim_clientes as (
         select 
             pk_cliente
-            ,fk_pessoa
-            ,fk_loja
-            ,fk_territorio
-            ,primeiro_nome
-            ,ultimo_sobrenome
-            ,nome_completo
-            ,territorio
-            ,grupo_territorio
-            ,nome_loja
-            ,flag_email_promocao
-            ,flag_nome_estilizado
+            ,prim_nome_cliente
+            ,ult_sobrenome_cliente
+            ,nome_cliente
+            ,loja_cliente
+            ,territorio_cliente
+            ,grupo_territorio_cliente
+            ,pais_territorio_cliente
+            ,flag_email_promocao_cliente
+            ,flag_nome_estilizado_cliente
         from int_clientes_enriquecida
     )
 

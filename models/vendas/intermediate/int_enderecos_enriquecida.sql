@@ -22,17 +22,16 @@ with
     enderecos_enriquecida as (
         select
             ende.pk_endereco
-            ,ende.fk_estado
             ,ende.endereco
             ,ende.complemento
             ,ende.cidade
             ,ende.cep
             ,est.estado
             ,est.sigla_estado
-            ,pais.pais
-            ,pais.pk_pais as sigla_pais
             ,ter.territorio
             ,ter.grupo_territorio
+            ,pais.pais
+            ,pais.pk_pais as sigla_pais
         from enderecos ende
         left join estados est on ende.fk_estado = est.pk_estado
         left join paises pais on est.fk_pais = pais.pk_pais 
