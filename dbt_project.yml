@@ -42,6 +42,8 @@ models:
       +schema: prd_staging
       sap:
         +materialized: table
+      seed:
+        +materialized: table
 
     vendas:
       intermediate:
