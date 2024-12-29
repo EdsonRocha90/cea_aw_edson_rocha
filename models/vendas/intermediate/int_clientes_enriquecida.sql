@@ -22,17 +22,15 @@ with
     clientes_enriquecida as (
         select 
             cli.pk_cliente
-            ,cli.fk_pessoa
-            ,cli.fk_loja
-            ,cli.fk_territorio
-            ,pes.primeiro_nome
-            ,pes.ultimo_sobrenome
-            ,pes.nome_completo
-            ,loj.nome_loja
-            ,ter.territorio
-            ,ter.grupo_territorio
-            ,pes.flag_email_promocao
-            ,pes.flag_nome_estilizado
+            ,pes.primeiro_nome as prim_nome_cliente
+            ,pes.ultimo_sobrenome as ult_sobrenome_cliente
+            ,pes.nome_completo as nome_cliente
+            ,loj.nome_loja as loja_cliente
+            ,ter.territorio as territorio_cliente
+            ,ter.grupo_territorio as grupo_territorio_cliente
+            ,ter.fk_pais as pais_territorio_cliente
+            ,pes.flag_email_promocao as flag_email_promocao_cliente
+            ,pes.flag_nome_estilizado as flag_nome_estilizado_cliente
         from clientes cli
         left join pessoas pes on cli.fk_pessoa = pes.pk_pessoa
         left join territorio_vendas ter on cli.fk_territorio = ter.pk_territorio 

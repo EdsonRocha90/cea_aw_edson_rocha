@@ -7,23 +7,23 @@ with
     dim_vendedores as (
         select 
             pk_vendedor
-            ,fk_territorio
-            ,data_nascimento
-            ,data_contratacao
-            ,primeiro_nome
-            ,ultimo_sobrenome
-            ,nome_completo
-            ,cargo
-            ,login_funcionario
-            ,territorio
-            ,grupo_territorio
+            ,data_nasc_vendedor
+            ,data_contratacao_vendedor
+            ,prim_nome_vendedor
+            ,ult_nome_vendedor
+            ,nome_vendedor
+            ,cargo_vendedor
+            ,login_vendedor
+            ,territorio_vendedor
+            ,grupo_territorio_vendedor
+            ,pais_territorio_vendedor
             ,cota_vendas
-            ,bonus
+            ,bonus_vendedor
             ,perc_comissao
-            ,vendas_acumuladas
-            ,vendas_ultimo_ano
-            ,genero
-            ,estado_civil
+            ,vendas_acumuladas_vendedor
+            ,vendas_ultimo_ano_vendedor
+            ,genero_vendedor
+            ,estado_civil_vendedor
         from int_vendedores_enriquecida
     )
 

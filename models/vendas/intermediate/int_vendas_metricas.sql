@@ -25,9 +25,9 @@ with
             ,item.quantidade
             ,item.preco_unitario
             ,item.perc_desconto
-            ,item.preco_unitario * item.quantidade as valor_negociado
-            ,item.preco_unitario * item.quantidade * (1-item.perc_desconto) as valor_negociado_liquido
-            ,vend.frete / (count(*) over(partition by vend.pk_pedido_venda)) as frete_rateado
+            ,ROUND(item.preco_unitario * item.quantidade, 2) as valor_negociado
+            ,ROUND(item.preco_unitario * item.quantidade * (1-item.perc_desconto), 2) as valor_negociado_liquido
+            ,ROUND( vend.frete / (count(*) over(partition by vend.pk_pedido_venda)) , 2) as frete_rateado
             ,vend.status
             ,vend.numero_revisao
             ,vend.flag_pedido_online

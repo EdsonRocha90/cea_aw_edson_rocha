@@ -22,23 +22,23 @@ with
     vendedores_enriquecida as (
         select 
             ven.pk_vendedor
-            ,ven.fk_territorio
-            ,fun.data_nascimento
-            ,fun.data_contratacao
-            ,pes.primeiro_nome
-            ,pes.ultimo_sobrenome
-            ,pes.nome_completo
-            ,fun.cargo
-            ,fun.login_funcionario
-            ,ter.territorio
-            ,ter.grupo_territorio
+            ,fun.data_nascimento as data_nasc_vendedor
+            ,fun.data_contratacao as data_contratacao_vendedor
+            ,pes.primeiro_nome as prim_nome_vendedor
+            ,pes.ultimo_sobrenome as ult_nome_vendedor
+            ,pes.nome_completo as nome_vendedor
+            ,fun.cargo as cargo_vendedor
+            ,fun.login_funcionario as login_vendedor
+            ,ter.territorio as territorio_vendedor
+            ,ter.grupo_territorio as grupo_territorio_vendedor
+            ,ter.fk_pais as pais_territorio_vendedor
             ,ven.cota_vendas
-            ,ven.bonus
+            ,ven.bonus as bonus_vendedor
             ,ven.perc_comissao
-            ,ven.vendas_acumuladas
-            ,ven.vendas_ultimo_ano
-            ,fun.genero
-            ,fun.estado_civil
+            ,ven.vendas_acumuladas as vendas_acumuladas_vendedor
+            ,ven.vendas_ultimo_ano as vendas_ultimo_ano_vendedor
+            ,fun.genero as genero_vendedor
+            ,fun.estado_civil as estado_civil_vendedor
         from vendedores ven 
         left join funcionarios fun on ven.pk_vendedor = fun.pk_funcionario 
         left join pessoas pes on ven.pk_vendedor = pes.pk_pessoa 
