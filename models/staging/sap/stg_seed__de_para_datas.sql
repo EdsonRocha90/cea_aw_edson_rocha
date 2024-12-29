@@ -2,7 +2,7 @@ with
     tab_de_para_datas as (
         select
             cast(ano_mes_dia as date) as ano_mes_dia
-            ,cast(mes_ano as string) as mes_ano
+            ,cast(mes_ano as string) as ano_mes
             ,cast(mes as int) as mes
             ,cast(ano as int) as ano
             ,cast(trimestre as int) as trimestre
