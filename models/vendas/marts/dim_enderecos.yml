@@ -9,3 +9,23 @@ models:
         data_tests:
           - unique
           - not_null  
+      - name: endereco
+        description: Descrição do endereço
+      - name: complemento
+        description: Complemento do endereço
+      - name: cidade
+        description: Nome do cidade
+      - name: cep
+        description: Código do CEP
+      - name: estado
+        description: Nome do estado
+      - name: sigla_estado
+        description: Sigla do estado
+      - name: pais
+        description: Nome do país
+      - name: sigla_pais
+        description: Sigla do país
+      - name: territorio
+        description: Descrição do território referente ao endereço
+      - name: grupo_territorio
+        description: Grupo referente ao território

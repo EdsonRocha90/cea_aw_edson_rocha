@@ -8,4 +8,6 @@ models:
         description: Identificador de cada cartão de crédito.
         data_tests:
           - unique
-          - not_null  
+          - not_null
+      - name: tipo_cartao
+        description: Descrição do tipo do cartão de crédito

@@ -9,3 +9,47 @@ models:
         data_tests:
           - unique
           - not_null  
+      - name: data_inicio_vendas_produto
+        description: Data inicial das vendas do produto
+      - name: data_fim_vendas_produto
+        description: Data final das vendas do produto
+      - name: data_produto_descontinuado
+        description: Identificação se o produto foi descontinuado
+      - name: descricao_produto
+        description: Descrição do produto
+      - name: numeracao_produto
+        description: Numeração do produto
+      - name: cor_produto
+        description: Cor do produto
+      - name: nivel_seguranca_estoque
+        description: Quantidade referente ao nível de segurança do estoque do produto
+      - name: ponto_reencomenda
+        description: Quantidade referente ao ponto de reencomenda do produto
+      - name: custo_padrao
+        description: Custo padrão do produto
+      - name: preco_listado
+        description: Preço listado do produto
+      - name: tamanho
+        description: Valor numérico referente ao tamanho do produto
+      - name: unidade_medida
+        description: Código referente a unidade de medida (cm, m, etc.)
+      - name: unidade_peso
+        description: Código referente a unidade de peso (gr, kg, etc.)
+      - name: peso_produto
+        description:  Valor numérico referente ao peso do produto
+      - name: dias_fabricacao
+        description: Dias necessários para a fabricação
+      - name: linha_produto
+        description: Sigla da linha do produto
+      - name: categoria_produto
+        description: Sigla da categoria do produto
+      - name: modelo_produto
+        description: Sigla do modelo do produto
+      - name: cod_subcategoria_produto
+        description: Código de identificação da subcategoria do produto
+      - name: cod_modelo_produto
+        description: Código de identificação do modelo
+      - name: flag_produto_acabado
+        description: Identificador para saber se é um produto acabado
+      - name: flag_criado
+        description: (verificar com a área de vendas ou time de sistemas responsável pelo SAP)

@@ -9,3 +9,21 @@ models:
         data_tests:
           - unique
           - not_null  
+      - name: prim_nome_cliente
+        description: Primeiro nome do cliente
+      - name: ult_sobrenome_cliente
+        description: Último sobrenome do cliente
+      - name: nome_cliente
+        description: Nome completo do cliente
+      - name: loja_cliente
+        description: Loja onde o cliente foi cadastrado
+      - name: territorio_cliente
+        description: Território do cliente
+      - name: grupo_territorio_cliente
+        description: Grupo de território do cliente
+      - name: pais_territorio_cliente
+        description: País ao qual pertence o território do cliente
+      - name: flag_email_promocao_cliente
+        description: Identificador se o e-mail do cliente está autorizado a receber notificações de promoção
+      - name: flag_nome_estilizado_cliente
+        description: (verificar com a área de vendas ou time de sistemas responsável pelo SAP)

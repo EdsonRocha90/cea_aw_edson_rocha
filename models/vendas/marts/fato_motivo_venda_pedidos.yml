@@ -9,3 +9,43 @@ models:
         data_tests:
           - unique
           - not_null  
+      - name: fk_cliente
+        description:  Chave estrangeira referente ao código identificador do cliente
+      - name: fk_produto
+        description: Chave estrangeira referente ao código identificador do produto
+      - name: fk_vendedor
+        description: Chave estrangeira referente ao código identificador do vendedor
+      - name: fk_territorio
+        description: Chave estrangeira referente ao código identificador do território
+      - name: fk_endereco_fatura
+        description: Chave estrangeira referente ao código identificador do endereço de fatura da venda
+      - name: fk_endereco_entrega
+        description: Chave estrangeira referente ao código identificador do endereço de entrega da venda
+      - name: fk_cartao_credito
+        description: Chave estrangeira referente ao código identificador do cartão de crédito utilizado pelo cliente
+      - name: fk_motivo_venda
+        description: Chave estrangeira referente ao código identificador do motivo de venda do pedido
+      - name: pedido_venda
+        description: Numeração que identifica o pedido de venda
+      - name: data_pedido
+        description: Data que foi gerado o pedido
+      - name: data_validade_pedido
+        description: Data referente ao vencimento do pedido (até que dia o pedido fica disponível no sistema)
+      - name: quantidade
+        description: Quantidade de itens
+      - name: preco_unitario
+        description: Preço unitário do produto
+      - name: perc_desconto
+        description: Percentual de desconto sobre o produto
+      - name: valor_negociado
+        description: Valor total bruto do item
+      - name: valor_negociado_liquido
+        description: Valor total líquido do item
+      - name: frete_rateado
+        description: Valor do frete proporcional a quantidade de produtos no pedido (total do frete / quantidade de itens no pedido)
+      - name: status
+        description: Status do pedido
+      - name: numero_revisao
+        description: (verificar com a área de vendas ou time de sistemas responsável pelo SAP)
+      - name: flag_pedido_online
+        description: Identificação de venda online ou não do item (0 = venda não foi online | 1 = venda online)

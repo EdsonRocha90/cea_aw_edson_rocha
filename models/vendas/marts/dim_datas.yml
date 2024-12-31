@@ -9,3 +9,19 @@ models:
         data_tests:
           - unique
           - not_null  
+      - name: ano_mes
+        description: Mês e ano da data
+      - name: mes
+        description: Mês
+      - name: ano
+        description: Ano
+      - name: trimestre
+        description: Número do trimestre referente ao ano da data
+      - name: semana
+        description: Número da semana referente ao ano da data
+      - name: semestre
+        description: Número do semestre referente ao ano da data
+      - name: dia_mes_ano
+        description: Dia, mês e ano no formato "DD/MM/YYYY"
+      - name: chave_data
+        description: Data no formato de uma chave numérica composta pelo ano, mês e dia concatenados (YYYYMMDD)
