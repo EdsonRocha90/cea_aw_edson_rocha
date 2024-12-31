@@ -9,3 +9,7 @@ models:
         data_tests:
           - unique
           - not_null  
+      - name: descr_motivo_venda
+        description: Descrição do motivo de venda.
+      - name: tipo_motivo
+        description: Tipo do motivo de venda.

@@ -9,3 +9,37 @@ models:
         data_tests:
           - unique
           - not_null  
+      - name: data_nasc_vendedor
+        description: Data de nascimento do vendedor.
+      - name: data_contratacao_vendedor
+        description: Data que o vendendor foi contratado pela empresa
+      - name: prim_nome_vendedor
+        description: Primeiro nome do vendedor
+      - name: ult_nome_vendedor
+        description: Último sobrenome do vendedor
+      - name: nome_vendedor
+        description: Nome completo do vendedor
+      - name: cargo_vendedor
+        description: Cargo do vendedor na empresa
+      - name: login_vendedor
+        description: Login criado para o vendedor acessar o sistema
+      - name: territorio_vendedor
+        description: Território do vendedor
+      - name: grupo_territorio_vendedor
+        description: Grupo de território do vendedor
+      - name: pais_territorio_vendedor
+        description: País ao qual pertence o território do vendendor
+      - name: cota_vendas
+        description: Valor financeiro referente a cota do vendedor
+      - name: bonus_vendedor
+        description: Valor financeiro referente ao bônus do vendedor
+      - name: perc_comissao
+        description: Percentual de comissão do vendedor
+      - name: vendas_acumuladas_vendedor
+        description: Valor financeiro referente ao total de vendas acumuladas do vendedor
+      - name: vendas_ultimo_ano_vendedor
+        description: Valor referente ao montante financeiro de vendas realizadas pelo vendedor no último ano
+      - name: genero_vendedor
+        description: Identificação do gênero
+      - name: estado_civil_vendedor
+        description: Identificação do estado civil
